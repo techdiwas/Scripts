@@ -8,16 +8,22 @@ It automates the configuration process, saving time and ensuring a smooth develo
 
 ## 🚀 Getting Started
 
-For Ubuntu:
+For Arch:
 
 ```bash
-bash ubuntu_setup.sh
+bash arch_setup.sh
 ```
 
 For Fedora:
 
 ```bash
 bash fedora_setup.sh
+```
+
+For Ubuntu:
+
+```bash
+bash ubuntu_setup.sh
 ```
 
 ---
