@@ -1,8 +1,8 @@
 # 📱 Ubuntu Scripts
 
-This repository contains a Bash script designed to streamline the setup of the **Ubuntu** and **Fedora** environment for seamless **GitHub usage** on Linux Distro.  
+This repository contains a Bash script designed to streamline the setup of the **Ubuntu**, **Arch** and **Fedora** environment for seamless **GitHub usage** on Linux Distro.
 
-It automates the configuration process, saving time and ensuring a smooth developer experience when working with GitHub via Ubuntu and Fedora.
+It automates the configuration process, saving time and ensuring a smooth developer experience when working with GitHub via Ubuntu, Arch and Fedora.
 
 ---
 
@@ -134,4 +134,37 @@ Apply changes:
 sudo systemctl restart gdm3
 ```
 
+# Bootloader settings
+
+Edit /etc/default/grub
+
+```bash
+sudo nano /etc/default/grub
+```
+
+Set `GRUB_RECORDFAIL_TIMEOUT=0`
+
+Run this after the change have been made
+
+```bash
+sudo update-grub
+``` 
+
+---
+
+---
+
+# Ubuntu Server
+
+After the server has been installed on your system, you can do these things.
+
+```bash
+sudo apt update && sudo apt upgrade
+sudo apt install ubuntu-desktop
+sudo apt purge vim
+sudo apt install gnome-software
+sudo snap install brave
+sudo snap install desktop-security-center
+sudo apt autoremove
+```
 ---
