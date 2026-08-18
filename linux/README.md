@@ -165,6 +165,10 @@ sudo apt purge vim
 sudo apt install gnome-software
 sudo snap install brave
 sudo snap install desktop-security-center
+sudo apt install flatpak
+sudo apt install gnome-software-plugin-flatpak
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 sudo apt autoremove
+sudo reboot
 ```
 ---
