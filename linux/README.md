@@ -142,6 +142,7 @@ Edit /etc/default/grub
 sudo nano /etc/default/grub
 ```
 
+Set `GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"`
 Set `GRUB_RECORDFAIL_TIMEOUT=0`
 
 Run this after the change have been made
@@ -159,16 +160,25 @@ sudo update-grub
 After the server has been installed on your system, you can do these things.
 
 ```bash
-sudo apt update && sudo apt upgrade
+sudo apt update
+sudo apt upgrade
+sudo apt autoremove
+
+sudo apt purge --auto-remove vim vim-common vim-runtime
+
 sudo apt install ubuntu-desktop
-sudo apt purge vim
 sudo apt install gnome-software
-sudo snap install brave
-sudo snap install desktop-security-center
+sudo apt install gnome-software-plugin-fwupd
+sudo apt install gnome-software-plugin-snap
+
 sudo apt install flatpak
 sudo apt install gnome-software-plugin-flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-sudo apt autoremove
+
+sudo snap remove firefox
+sudo snap install brave
+sudo snap install desktop-security-center
 sudo reboot
 ```
+
 ---
